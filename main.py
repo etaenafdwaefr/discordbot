@@ -1,7 +1,6 @@
 import os
 import discord
-from discord.ext import comman
-from discord import app_commands
+from discord.ext import commands
 
 from myserver import server_on
 
