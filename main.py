@@ -1,10 +1,15 @@
 import os
 import discord
 from discord.ext import commands
+import myserver
+print(dir(myserver))
 
 from myserver import server_on
 
+server_on
 
+def server_on():
+    print("Server is running")
 
 #ปิดใช้งาน Intents
 intents = discord.Intents.default()
