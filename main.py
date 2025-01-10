@@ -1,15 +1,11 @@
 import os
 import discord
-from discord.ext import commands
-import myserver
-print(dir(myserver))
+from discord.ext import comman
+from discord import app_commands
 
 from myserver import server_on
 
-server_on
 
-def server_on():
-    print("Server is running")
 
 #ปิดใช้งาน Intents
 intents = discord.Intents.default()
@@ -62,6 +58,8 @@ async def on_voice_state_update(member, before, after):
         )
         await channel.send(embed=embed)
 
+
 server_on()
 
-bot.run(os.getenv("TOKEN"))
+bot.run(os.getenv('TOKEN'))
+
